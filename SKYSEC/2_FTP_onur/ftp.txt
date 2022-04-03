@@ -1,0 +1,71 @@
+FTP nedir? 
+
+  
+
+Protokoller içerisinde HTTP'den sonra en çok gördüğümüz belki de bilmeden hayatımızın parçası haline 
+gelen FTP yani File Transfer Protocol sistemini tanımlayacak olursak en basit hali ile Dosyaların 
+aktarımı ve dizinleştirilmesi olarak tanımlayabiliriz.  
+
+  
+
+Peki bu FTP bizim karşımıza nerelerde çıkıyor ? 
+
+Aslında internette gezinmelerde sıkça kullanılan bir protokoldür. Daha çok web geliştiricilerin FTP 
+terimi olarak bildikleri bu sistem web sayfaların ara yüzünde karşımıza çıkıyor. Sonuçta kullanıcı, 
+bilgisayar üzerinden görüntülediği internet ortamındaki bir sitenin yazı formatı(HTTP) dışında 
+bu sitenin resimleri, indirilebilir dosyaları hatta site üzerinde tutulan kişisel verilerinizin 
+sıralanması FTP ile sağlanmış oluyor. Eğer bilgisayar üzerinden örnek verecek olursak bilgisayarımızın 
+dosya sistemini "File Systems" bu dosyaların istemci mesajı ile düzenli halde görüntülenmesi, 
+aktarılmasını sağlayan Bilgisayar formatında çalışan yapıya da "File Transfer Protocol Server" diyebiliriz, 
+tabi bunun için yerel veya dışa yönük bir ağ içerisinde Hedef ve kaynak IP adresleri ile 
+kablolu/kablosuz dosya/veri aktarımı sağlanması gerekiyor. 
+
+  
+
+Hadi FTP çalışma prensiplerini inceleyelim.   
+
+  
+
+Kullanıcımız Ayşe, Şafak BİLİCİ'nin derin öğrenmesine giriş eğitimini incelemek için tarayıcıya 
+"Şafak Bilici Derin Öğrenmesi" yazar ve karşısına eacikkaynak.com domainli sitedeki video içerik 
+ve daha fazlası listlenmiş halde bulur. Site üzerine tıklayınca istemciden gelen isteği ana makine 
+olan server'a 7 bitlik ASCII formatında iletilir. Burada HTTP protokolü çalışıyor. Site içerisindeki "text" 
+yani metin dışındaki dosya türleri aktarımı için HTTP dışında FTP protokolüne başvurularak yine 
+7 bitlik ASCII formatta kontrol bağıntısı üzerinden istek yollanarak Eğitim içeriği olan videonun, 
+videolardaki ek olarak siteye bırakılan dosyaları istenilen yere uzantı veya gömülü olarak konmasını 
+sağlama şeklinde olur. Site üzerinden herhangi bir metin dosyasını görüntüleyebiliyorsanız eğer bu da
+ FTP ile sağlanmış olur. HTTP ise daha çok kod sayfası üzerinden yazdığınız metinleri kapsar dersek şu 
+süreçte daha tanımımıza uyar.  
+
+  
+
+Burada aklımıza takılabilecek sorulardan biri HTTP ile bu dosyalar aktarılamaz mıydı? Hayır, aslında 
+protokollerin farklı olmasının nedeni de bu dosya türlerinin çeşitliliği ve bu protokollerin her 
+çeşitliliğe özel çözüm olarak daha hızlı bir internet deneyimi sağlamamızı sağlıyor. 
+
+  
+
+Güvenlikte FTP protokolleri 
+
+ 
+
+Sistem üzerinde zafiyetlerinizin size en çok zarar vereceği kısımlardan biridir FTP bağlantıları. 
+Kullanıcı ile sistem arasında dosya transferleri yapmanızı sağlayan bu protokol, sisteminize sızmak 
+isteyen birisi için ilk bakılacak alanlardan biridir.  
+
+ 
+
+FTP üzerinden yaptığınız kullanıcı ve şifresinin tahmin edilebilir olması, siz ve sitenin kullanıcıları 
+için büyük tehlike arz etmektedir. Hele ki sunucunuzda başka siteler varsa bu tehlike biraz daha ileri 
+seviyeye çıkmaktadır. 
+
+ 
+
+FTP ile sitenizi güncellemek istediğinizde bir porta kullanıcı girişine ihtiyaç duyarsınız ve bunun 
+için bir oturum oluşturursunuz. Bu kullanıcının sunucuya bağlanması için açmanız gereken bir port olmalıdır. 
+Bu port sızma testinde ilk tespit edilen bir zafiyettir. Ardından kullanıcı açtığınız “isim” 
+ve oluşturduğunuz “password” da tehlike arz etmektedir. Bu isim ve şifreler eğer başka 
+yerlerde kullanabileceğiniz bir kombinasyon oluşturuyorsa tehlike daha da artan türe gitmektedir.  
+Eğer mail kontrol sistemine sahip bir sunucuya bağlı port veya FTP kullanıcısı ise mailleriniz 
+üzerinden şifre sıfırlama ile ilgili her işlemi yaparak sizin bu işlemleri görmemenizi sağlayacak 
+hareketleri yapabilir.  

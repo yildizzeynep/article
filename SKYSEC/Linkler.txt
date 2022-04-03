@@ -1,0 +1,2 @@
+https://web.ecs.syr.edu/~wedu/seed/Book/book_sample_tcp.pdf
+https://www.geeksforgeeks.org/layers-of-osi-model/
