@@ -1,1 +1,1 @@
-umarım burayı değiştirebilirim
+burada hydra kullanımına ait bilgiler vardır.
